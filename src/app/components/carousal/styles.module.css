@@ -1,0 +1,22 @@
+.scroll-animation {
+  animation: slideLeft 10s linear infinite; /* Adjust the duration (10s) as needed */
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-19%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(19%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
