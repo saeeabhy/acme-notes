@@ -52,7 +52,7 @@ export default function Features() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-start px-8 gap-12">
+        <div className="flex flex-col justify-start px-4 gap-12">
           {features.map((feature, index) => {
             const featureInfo = (
               <div key={index} className="flex flex-col gap-2">
@@ -72,15 +72,15 @@ export default function Features() {
               <Image
                 alt="feature-image"
                 className="aspect-video rounded-3xl overflow-hidden object-cover object-top"
-                height="500"
+                height="450"
                 src={feature.imageUrl}
-                width="500"
+                width="450"
               />
             );
             return (
               <div
                 key={index}
-                className="flex gap-4 justify-between items-center p-4 transform transition-transform hover:scale-105"
+                className="flex gap-12 justify-between items-center p-4 transform transition-transform hover:scale-105"
               >
                 {index % 2 === 0 ? featureInfo : featureImage}
                 {index % 2 === 1 ? featureInfo : featureImage}

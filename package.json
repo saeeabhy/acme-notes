@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^14.1.4",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.24",
     "mini-svg-data-uri": "^1.4.4",

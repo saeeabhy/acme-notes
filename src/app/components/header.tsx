@@ -30,7 +30,7 @@ export default function Header() {
               Tame your work, organize your life.
             </p>
             <Link
-              className=" w-[25rem] border-2 border-black bo flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-yellow-300 to-yellow-400 hover:bg-yellow-500 px-20 mt-6 py-8 text-xl transition-colors"
+              className=" w-[25rem] border-2 border-black bo flex h-10 items-center justify-center rounded-lg bg-gradient-to-b from-yellow-200 to-yellow-400 hover:bg-yellow-500 px-20 mt-6 py-8 text-xl transition-colors"
               href="#"
             >
               Try for Free!

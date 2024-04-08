@@ -9,7 +9,7 @@ const reviewersData = [
       "https://media.licdn.com/dms/image/D5603AQGZ3nTLv3WcHA/profile-displayphoto-shrink_400_400/0/1668705536041?e=1717632000&v=beta&t=hli6rPRGYd_BYI4UzEA74opu73v3G-VS8PVxCHO9SFI",
     rating: 5,
     review:
-      "Acme Notes has been a game-changer for me! Its intuitive interface and powerful features make it easy for me to jot down ideas, collaborate with clients, and keep track of deadlines. Plus, the cloud syncing ensures that I can access my notes from anywhere, on any device. Highly recommended!",
+      "Acme Notes has been a game-changer for me! Its intuitive interface and powerful features make it easy for me to jot down ideas, collaborate with clients, and keep track of deadlines. Highly recommended!",
   },
   {
     name: "Saee Abhyankar",
@@ -18,7 +18,7 @@ const reviewersData = [
       "https://media.licdn.com/dms/image/C4D03AQFu3l9BjncPuw/profile-displayphoto-shrink_400_400/0/1523046183817?e=1717632000&v=beta&t=gaOrnj6cNWEohcTeC39_RkjKtOBQJRTqQUn6Gnp1Oz0",
     rating: 5,
     review:
-      "I've tried several note-taking apps in the past, but Acme Notes stands out for its simplicity and effectiveness. Whether I'm in a meeting, brainstorming ideas, or jotting down reminders, Acme Notes makes the process seamless. The ability to categorize notes, attach files, and set reminders has greatly improved my productivity. It's become an essential tool in my daily workflow!",
+      "I've tried several note-taking apps in the past, but Acme Notes stands out for its simplicity and effectiveness. Whether I'm in a meeting, brainstorming ideas, or jotting down reminders, Acme Notes makes the process seamless. It's become an essential tool in my daily workflow!",
   },
   {
     name: "Saransh Chauhan",
@@ -27,7 +27,7 @@ const reviewersData = [
       "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
     rating: 4,
     review:
-      "Acme Notes has been a lifesaver for keeping track of lecture notes, assignments, and study materials. The clean and organized layout helps me stay focused and motivated. I especially love the ability to create custom notebooks and share them with classmates for group projects. With Acme Notes, I feel more confident and prepared for success in my academic journey.",
+      "Acme Notes has been a lifesaver for keeping track of lecture notes, assignments, and study materials. With Acme Notes, I feel more confident and prepared for success in my academic journey.",
   },
 ];
 
