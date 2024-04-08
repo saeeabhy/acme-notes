@@ -34,8 +34,8 @@ const reviewersData = [
 const Reviews = () => {
   return (
     <section className=" bg-gradient-to-t from-white to-yellow-400 ">
-      <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <h2 className="text-center text-2xl font-bold tracking-tight text-black sm:text-5xl">
+      <div className="mx-auto max-w-screen-xl px-4 py-12">
+        <h2 className="text-center text-2xl font-bold tracking-tight text-black md:text-4xl">
           Read reviews from our trusted customers
         </h2>
 

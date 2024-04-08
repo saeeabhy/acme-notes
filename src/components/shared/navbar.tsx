@@ -19,7 +19,7 @@ export const NAV_LINKS_LIST = [
 
 export default function Navbar() {
   return (
-    <nav className="lg:flex-row bg-gradient-to-t from-white to-yellow-400 flex flex-col items-center justify-between py-16 px-64">
+    <nav className="lg:flex-row bg-gradient-to-t from-white to-yellow-400 flex flex-col items-center justify-between py-16 px-36">
       <span className="flex gap-2 justify-start">
         <Image
           alt="logo"
