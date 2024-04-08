@@ -41,6 +41,7 @@ export default function Header() {
             height="600"
             src="/acme-notes-demo.png"
             width="800"
+            priority
           />
         </div>
       </div>
