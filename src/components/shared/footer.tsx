@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="text-teal-600">
             <span className="flex justify-start">
               <Image
-                alt="Image"
+                alt="logo"
                 className="aspect-video overflow-hidden rounded-3xl object-cover object-center"
                 height="60"
                 src="/logo.png"

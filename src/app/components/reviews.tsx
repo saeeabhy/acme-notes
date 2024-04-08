@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { StarsIcon } from "../icons";
 
 const reviewersData = [
@@ -46,10 +47,12 @@ const Reviews = () => {
                 className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8"
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    alt=""
+                  <Image
+                    alt={`${review.name}-avatar`}
                     src={review.imageUrl}
                     className="size-14 rounded-full object-cover"
+                    width={100}
+                    height={100}
                   />
 
                   <div>

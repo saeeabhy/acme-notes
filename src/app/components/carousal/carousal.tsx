@@ -12,7 +12,7 @@ const Carousal = () => {
       </h4>
       <Image
         className={`${styles["scroll-animation"]}`}
-        alt="Image"
+        alt="trusted-users"
         height="1200"
         src="/user-logos.png"
         width="1100"

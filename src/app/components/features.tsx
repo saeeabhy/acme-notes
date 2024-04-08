@@ -36,7 +36,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="w-full py-12 md:py-24 lg:py-32 bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.1] "
+      className="w-full py-12 px-4 md:py-24 lg:py-32 bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.1] "
     >
       <div className="container space-y-12 px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -55,14 +55,14 @@ export default function Features() {
         <div className="flex flex-col justify-start px-8 gap-12">
           {features.map((feature, index) => {
             const featureInfo = (
-              <div className="flex flex-col gap-2">
+              <div key={index} className="flex flex-col gap-2">
                 <div className="flex justify-start gap-4 items-center">
                   {feature.icon}
                   <h3 className="sm:text-l md:text-2xl lg:text-3xl text-yellow-500 font-bold">
                     {feature.heading}
                   </h3>
                 </div>
-                <p className="sm:text-m md:text-l lg:text-xl text-black-500 dark:text-gray-500">
+                <p className="sm:text-m md:text-l lg:text-xl text-black dark:text-gray-500">
                   {feature.description}
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default function Features() {
 
             const featureImage = (
               <Image
-                alt="Image"
+                alt="feature-image"
                 className="aspect-video rounded-3xl overflow-hidden object-cover object-top"
                 height="500"
                 src={feature.imageUrl}

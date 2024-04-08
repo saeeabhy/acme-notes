@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="lg:flex-row bg-gradient-to-t from-white to-amber-400 flex flex-col items-center justify-between py-16 px-64">
       <span className="flex gap-2 justify-start">
         <Image
-          alt="Image"
+          alt="logo"
           className="aspect-video overflow-hidden rounded-3xl object-cover object-center"
           height="60"
           src="/logo.png"
