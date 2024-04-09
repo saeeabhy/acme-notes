@@ -16,8 +16,8 @@ const typeWriterInput = [
 export default function Header() {
   return (
     <section className="">
-      <div className="px-12 h-[40rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_70%,black)]">
+      <div className="pb-12 pt-2 h-[41rem] w-full bg-white bg-grid-black/[0.1] relative flex items-center justify-center">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,white)]">
           <div className="container md:px-6"></div>
         </div>
         <div className="gap-8 max-[800px]:flex-col flex justify-between">
