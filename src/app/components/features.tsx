@@ -3,28 +3,36 @@ import { ArchiveIcon, BookOpenIcon, TypeIcon, UsersIcon } from "../icons";
 
 const features = [
   {
-    icon: <BookOpenIcon className="h-12 w-12 text-yellow-400" />,
+    icon: (classes: string) => {
+      return <BookOpenIcon className={classes} />;
+    },
     heading: "Effortless Note-Taking",
     description:
       "Quickly jot down your ideas with our intuitive note-taking interface.",
     imageUrl: "/note-taking.png",
   },
   {
-    icon: <ArchiveIcon className="h-12 w-12 text-yellow-500" />,
+    icon: (classes: string) => {
+      return <ArchiveIcon className={classes} />;
+    },
     heading: "Powerful Organization",
     description:
       "Tag, sort, and search your notes to find the information you need when you need it.",
     imageUrl: "/search.png",
   },
   {
-    icon: <UsersIcon className="h-12 w-12 text-yellow-500" />,
+    icon: (classes: string) => {
+      return <UsersIcon className={classes} />;
+    },
     heading: "Seamless Sharing",
     description:
       "Collaborate with others by sharing your notes, making it easy to work together.",
     imageUrl: "/share.png",
   },
   {
-    icon: <TypeIcon className="h-12 w-12 text-yellow-500" />,
+    icon: (classes: string) => {
+      return <TypeIcon className={classes} />;
+    },
     heading: "Rich Formatting",
     description:
       "Enhance your notes with rich formatting options including bold, italic, and more, to create visually appealing and structured content.",
@@ -56,8 +64,8 @@ export default function Features() {
           {features.map((feature, index) => {
             const featureInfo = (
               <div key={index} className="flex flex-col gap-2 ">
-                <div className="flex justify-start gap-4 items-center">
-                  {feature.icon}
+                <div className="font-semibold flex justify-start gap-4 items-center">
+                  {feature.icon("h-12 w-12 text-yellow-500")}
                   <h3 className="sm:text-l md:text-2xl lg:text-3xl text-yellow-500 font-semibold">
                     {feature.heading}
                   </h3>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const NAV_LINKS_LIST = [
   {
-    label: "Explore",
+    label: "Features",
     href: "/",
   },
   {
@@ -21,7 +21,7 @@ export const NAV_LINKS_LIST = [
 export default function Navbar() {
   const handleOnClick = (link: any) => {
     let featuresSection = null;
-    if (link.label === "Explore") {
+    if (link.label === "Features") {
       featuresSection = document.getElementById("features");
     } else if (link.label === "Sign In") {
       featuresSection = document.getElementById("sign-in");
