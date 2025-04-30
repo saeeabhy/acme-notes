@@ -33,9 +33,9 @@ export default function Navbar() {
       <span className="flex gap-2 justify-start">
         <Image
           alt="logo"
-          className="aspect-video overflow-hidden rounded-3xl object-cover object-center"
+          className="aspect-video overflow-hidden rounded-3xl object-cover object-center bg-blue-500"
           height="60"
-          src="/logo.png"
+          src="/logo-blue.png"
           width="60"
         />
         <Logo />
