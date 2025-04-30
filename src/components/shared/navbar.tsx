@@ -37,7 +37,6 @@ export default function Navbar() {
         >
           A
         </div>
-        />
         <Logo />
       </span>
 
