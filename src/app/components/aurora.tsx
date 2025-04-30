@@ -76,7 +76,7 @@ export default function Aurora() {
                   Sign up
                 </a>
               </p>
-              <button className="bg-yellow-400 dark:bg-white hover:bg-yellow-500 font-semibold rounded-xl w-fit text-black px-4 py-2">
+              <button className="bg-blue-500 dark:bg-white hover:bg-blue-600 font-semibold rounded-xl w-fit text-black px-4 py-2">
                 Sign In
               </button>
             </div>

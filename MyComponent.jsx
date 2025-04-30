@@ -1,27 +1,25 @@
-import React from "react";
-
 export default function MyComponent(props) {
   return (
-    <div
-      builder-id="builder-086e8c899e8e4b1a9bcc0472e80accbb"
-      aria-label="Acme Notes Logo"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "rgb(59, 130, 246)", // blue-500 equivalent
-        width: "60px",
-        height: "60px",
-        borderRadius: "24px",
-        color: "white",
-        fontWeight: "bold",
-        fontSize: "24px",
-        maxWidth: "100%",
-        verticalAlign: "middle",
-        pointerEvents: "none",
+    <button
+      data-loc="/app/code/src/app/components/aurora.tsx:79:15"
+      builder-id="builder-e83636fc96f64eb3ab579f9e1f1f9534"
+      css={{
+        appearance: "button",
+        backgroundColor: "rgb(59, 130, 246)", // Changed from yellow to blue-500
+        borderRadius: "12px",
+        color: "rgb(0, 0, 0)",
+        fontWeight: "600",
+        paddingBottom: "8px",
+        paddingLeft: "16px",
+        paddingRight: "16px",
+        paddingTop: "8px",
+        textAlign: "center",
+        width: "fit-content",
+        pointerEvents: "auto",
+        borderColor: "rgba(0, 0, 0, 0)",
       }}
     >
-      A
-    </div>
+      Sign In
+    </button>
   );
 }
