@@ -30,7 +30,7 @@ export default function Navbar() {
   };
   return (
     <nav className="lg:flex-row bg-gradient-to-t from-white to-blue-400 flex flex-col items-center justify-between py-16 px-36">
-      <span className="flex gap-2 justify-start">
+      <span className="flex gap-2 justify-center items-center">
         <div
           className="flex items-center justify-center w-[60px] h-[60px] bg-blue-500 rounded-3xl text-white font-bold text-3xl"
           aria-label="Acme Notes Logo"

@@ -6,14 +6,13 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="text-teal-600">
-            <span className="flex justify-start">
-              <Image
-                alt="logo"
-                className="aspect-video overflow-hidden rounded-3xl object-cover object-center"
-                height="60"
-                src="/logo.png"
-                width="60"
-              />
+            <span className="flex justify-center items-center gap-2">
+              <div
+                className="flex items-center justify-center w-[60px] h-[60px] bg-blue-500 rounded-3xl text-white font-bold text-3xl"
+                aria-label="Acme Notes Logo"
+              >
+                A
+              </div>
               <Logo />
             </span>
           </div>
