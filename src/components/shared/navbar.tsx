@@ -31,12 +31,12 @@ export default function Navbar() {
   return (
     <nav className="lg:flex-row bg-gradient-to-t from-white to-blue-400 flex flex-col items-center justify-between py-16 px-36">
       <span className="flex gap-2 justify-start">
-        <Image
-          alt="logo"
-          className="aspect-video overflow-hidden rounded-3xl object-cover object-center bg-blue-500"
-          height="60"
-          src="/logo-blue.png"
-          width="60"
+        <div
+          className="flex items-center justify-center w-[60px] h-[60px] bg-blue-500 rounded-3xl text-white font-bold text-3xl"
+          aria-label="Acme Notes Logo"
+        >
+          A
+        </div>
         />
         <Logo />
       </span>
