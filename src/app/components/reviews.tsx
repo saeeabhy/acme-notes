@@ -33,7 +33,7 @@ const reviewersData = [
 
 const Reviews = () => {
   return (
-    <section className=" bg-gradient-to-t from-white to-yellow-400 ">
+    <section className=" bg-gradient-to-t from-white to-blue-400 ">
       <div className="mx-auto max-w-screen-xl px-4 py-12">
         <h2 className="text-center text-2xl font-bold tracking-tight text-black md:text-4xl">
           Read reviews from our trusted customers
@@ -44,7 +44,7 @@ const Reviews = () => {
             return (
               <blockquote
                 key={i}
-                className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 transition hover:scale-[1.04] hover:bg-yellow-100"
+                className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 transition hover:scale-[1.04] hover:bg-blue-100"
               >
                 <div className="flex items-center gap-4">
                   <Image

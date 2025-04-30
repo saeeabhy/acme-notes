@@ -17,8 +17,8 @@ export const AuroraBackground = ({
     <main>
       <div
         className={cn(
-          "relative flex flex-col h-[60vh] items-center justify-center bg-yellow-300 dark:bg-zinc-900  text-slate-950 transition-bg",
-          className
+          "relative flex flex-col h-[60vh] items-center justify-center bg-blue-300 dark:bg-zinc-900  text-slate-950 transition-bg",
+          className,
         )}
         {...props}
       >
@@ -28,21 +28,21 @@ export const AuroraBackground = ({
               `
               [--white-gradient:repeating-linear-gradient(100deg,var(--white)_10%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)]
               [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
-              [--aurora:repeating-linear-gradient(100deg,var(--yellow-500)_10%,var(--yellow-300)240%,var(--yellow-200)_30%,var(--yellow-100)_40%,var(--yellow-400)_50%)]
+              [--aurora:repeating-linear-gradient(100deg,var(--blue-500)_10%,var(--blue-300)240%,var(--blue-200)_30%,var(--blue-100)_40%,var(--blue-400)_50%)]
               [background-image:var(--white-gradient),var(--aurora)]
               dark:[background-image:var(--dark-gradient),var(--aurora)]
               [background-size:300%,_200%]
               [background-position:50%_50%,50%_50%]
               filter blur-[10px] invert dark:invert-0
-              after:content-[""] after:absolute after:inset-0 after:[background-image:var(--white-gradient),var(--aurora)] 
+              after:content-[""] after:absolute after:inset-0 after:[background-image:var(--white-gradient),var(--aurora)]
               after:dark:[background-image:var(--dark-gradient),var(--aurora)]
-              after:[background-size:200%,_100%] 
+              after:[background-size:200%,_100%]
               after:animate-aurora after:[background-attachment:fixed] after:mix-blend-difference
               pointer-events-none
               absolute -inset-[10px] opacity-100 will-change-transform`,
 
               showRadialGradient &&
-                `[mask-image:radial-gradient(ellipse_at_60%_0%,yellow_10%,var(--transparent)_70%)]`
+                `[mask-image:radial-gradient(ellipse_at_60%_0%,blue_10%,var(--transparent)_70%)]`,
             )}
           ></div>
         </div>
