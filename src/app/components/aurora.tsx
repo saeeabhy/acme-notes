@@ -23,7 +23,7 @@ export default function Aurora() {
           Acme Notes.
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-          Tame your work, organize your life.
+          Tame your notes, organize your life.
         </div>
         <div className="">
           <div className="mx-auto max-w-lg text-center">
