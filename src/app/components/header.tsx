@@ -27,7 +27,7 @@ export default function Header() {
               words={typeWriterInput}
             ></TypewriterEffectSmooth>
             <p className="text-center text-black text-3xl font-semibold">
-              Tame your work, organize your life.
+              <p>Tame your notes, organize your life.</p>
             </p>
             <Link
               className=" w-[25rem] border-2 border-black bo flex h-10 items-center justify-center rounded-lg bg-gradient-to-b from-yellow-200 to-yellow-400 hover:bg-yellow-500 px-20 mt-6 py-8 text-xl transition-colors"
