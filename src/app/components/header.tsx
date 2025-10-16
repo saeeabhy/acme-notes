@@ -8,7 +8,7 @@ const typeWriterInput = [
     className: "font-thin",
   },
   {
-    text: "Acme Notes.",
+    text: "Saee Notes.",
     className: "font-semibold text-blue-500",
   },
 ];
