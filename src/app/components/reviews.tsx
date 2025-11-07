@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Image from "next/image";
 import { StarsIcon } from "../icons";
 
 const reviewersData = [

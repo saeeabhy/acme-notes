@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Image from "next/image";
 import { ArchiveIcon, BookOpenIcon, TypeIcon, UsersIcon } from "../icons";
 
 const features = [
