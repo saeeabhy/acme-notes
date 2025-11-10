@@ -23,7 +23,7 @@ const Pricing = () => {
             </p>
 
             <a
-              className="mt-4 block rounded bg-blue-400 px-12 py-3 text-center text-sm font-medium text-white hover:bg-blue-500 focus:outline-none focus:ring sm:mt-6"
+              className="mt-4 block rounded bg-purple-400 px-12 py-3 text-center text-sm font-medium text-white hover:bg-purple-500 focus:outline-none focus:ring sm:mt-6"
               href="#"
             >
               Get Started
@@ -42,7 +42,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -61,7 +61,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -80,7 +80,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -193,7 +193,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -212,7 +212,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -231,7 +231,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -250,7 +250,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -344,7 +344,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -363,7 +363,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -382,7 +382,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -401,7 +401,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -420,7 +420,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
@@ -439,7 +439,7 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-5 text-indigo-700"
+                  className="size-5 text-purple-700"
                 >
                   <path
                     strokeLinecap="round"
