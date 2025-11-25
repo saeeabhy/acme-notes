@@ -53,7 +53,7 @@ export default function Features() {
               Capture. Organize. Share.
             </h2>
             <p className="max-w-[900px] text-black-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Acme Notes is designed to help you take better notes. From
+              Jolly Notes is designed to help you take better notes. From
               capturing your thoughts to organizing your ideas, it is a tool for
               students, professionals, and anyone who wants to be more
               productive.
