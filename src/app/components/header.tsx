@@ -14,6 +14,9 @@ const typeWriterInput = [
 ];
 
 export default function Header() {
+  // BUG LOW-5: Debug console.log left in production code — leaks component render info
+  console.log("Header rendered", { typeWriterInput });
+
   return (
     <section className="">
       <div className="pb-12 pt-2 h-[41rem] w-full bg-white bg-grid-black/[0.1] relative flex items-center justify-center">

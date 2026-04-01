@@ -94,8 +94,10 @@ export default function Features() {
                     : "hover:translate-x-5 hover:translate-y-5 hover:rotate-3"
                 }`}
               >
+                {/* BUG HIGH-2: Both slots use the same condition — alternating layout is broken.
+                    Even-indexed rows render featureInfo twice; odd-indexed render featureImage twice. */}
                 {index % 2 === 0 ? featureInfo : featureImage}
-                {index % 2 === 1 ? featureInfo : featureImage}
+                {index % 2 === 0 ? featureInfo : featureImage}
               </div>
             );
           })}
