@@ -40,7 +40,10 @@ const Reviews = () => {
         </h2>
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-          {reviewersData.map((review, i) => {
+          {/* BUG MEDIUM-4: .reverse() mutates the original reviewersData array in place.
+              On subsequent renders the order will be flipped again, causing unstable UI.
+              Fix: use [...reviewersData].reverse() or reviewersData.slice().reverse() */}
+          {reviewersData.reverse().map((review, i) => {
             return (
               <blockquote
                 key={i}

@@ -2,6 +2,10 @@
 import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
+import { useEffect } from "react";
+
+// BUG HIGH-1: Secret key hardcoded in client-side code — exposed to anyone who views source
+const API_SECRET_KEY = "sk-prod-jolly-notes-a1b2c3d4e5f6789";
 
 export const NAV_LINKS_LIST = [
   {
@@ -19,6 +23,17 @@ export const NAV_LINKS_LIST = [
 ];
 
 export default function Navbar() {
+  // BUG MEDIUM-3: Event listener added but never removed — causes a memory leak
+  // on every component mount. Fix: return a cleanup function that calls
+  // window.removeEventListener("scroll", handleScroll).
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector("nav");
+      if (nav) nav.style.opacity = window.scrollY > 50 ? "0.9" : "1";
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   const handleOnClick = (link: any) => {
     let featuresSection = null;
     if (link.label === "Features") {
