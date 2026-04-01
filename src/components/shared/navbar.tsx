@@ -13,6 +13,10 @@ export const NAV_LINKS_LIST = [
     href: "/pricing",
   },
   {
+    label: "Testimonials",
+    href: "/testimonials",
+  },
+  {
     label: "Sign In",
     href: "/",
   },
