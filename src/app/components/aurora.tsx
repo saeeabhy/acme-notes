@@ -6,7 +6,14 @@ import { motion } from "framer-motion";
 import { AuroraBackground } from "../../components/ui/aurora-background";
 import { EmailIcon, PasswordIcon } from "../icons";
 
+const BUTTON_CLASSES = "bg-yellow-400 dark:bg-white hover:bg-yellow-500 font-semibold rounded-xl w-fit text-black px-4 py-2";
+
 export default function Aurora() {
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log("form submitted");
+  };
+
   return (
     <AuroraBackground id="sign-in">
       <motion.div
@@ -32,8 +39,9 @@ export default function Aurora() {
             </h1>
           </div>
 
-          <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+          <form action="#" onSubmit={handleSubmit} className="mx-auto mb-0 mt-8 max-w-md space-y-4">
             <div>
+              {/* bug: htmlFor="email" but input is missing id="email" — label not associated */}
               <label htmlFor="email" className="sr-only">
                 Email
               </label>
@@ -52,6 +60,7 @@ export default function Aurora() {
             </div>
 
             <div>
+              {/* bug: same htmlFor/id mismatch for password */}
               <label htmlFor="password" className="sr-only">
                 Password
               </label>
@@ -76,6 +85,7 @@ export default function Aurora() {
                   Sign up
                 </a>
               </p>
+              {/* duplicated inline class string — BUTTON_CLASSES constant above is defined but never used */}
               <button className="bg-yellow-400 dark:bg-white hover:bg-yellow-500 font-semibold rounded-xl w-fit text-black px-4 py-2">
                 Sign In
               </button>

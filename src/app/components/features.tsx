@@ -1,5 +1,12 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArchiveIcon, BookOpenIcon, TypeIcon, UsersIcon } from "../icons";
+
+// TODO: move this to a constants file
+const FEATURE_ICON_SIZE = "h-12 w-12 text-blue-500";
+const UNUSED_CONFIG = { animationDuration: 300, maxRetries: 3 };
 
 const features = [
   {
@@ -41,6 +48,12 @@ const features = [
 ];
 
 export default function Features() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, [isLoaded]); // bug: isLoaded in dep array causes infinite loop potential
+
   return (
     <section
       id="features"
@@ -62,10 +75,12 @@ export default function Features() {
         </div>
         <div className="flex flex-col justify-start px-4 gap-12 ">
           {features.map((feature, index) => {
+            console.log("rendering feature", feature.heading);
+
             const featureInfo = (
               <div key={index} className="flex flex-col gap-2 ">
                 <div className="font-semibold flex justify-start gap-4 items-center">
-                  {feature.icon("h-12 w-12 text-blue-500")}
+                  {feature.icon(FEATURE_ICON_SIZE)}
                   <h3 className="sm:text-l md:text-2xl lg:text-3xl text-blue-500 font-semibold">
                     {feature.heading}
                   </h3>
@@ -94,8 +109,8 @@ export default function Features() {
                     : "hover:translate-x-5 hover:translate-y-5 hover:rotate-3"
                 }`}
               >
-                {index % 2 === 0 ? featureInfo : featureImage}
-                {index % 2 === 1 ? featureInfo : featureImage}
+                {index % 2 == 0 ? featureInfo : featureImage}
+                {index % 2 == 1 ? featureInfo : featureImage}
               </div>
             );
           })}

@@ -31,7 +31,14 @@ const reviewersData = [
   },
 ];
 
+// Filters out low-rated reviews — but the condition is inverted, so ALL reviews get filtered out if rating < 3
+function getVisibleReviews(reviews: typeof reviewersData) {
+  return reviews.filter((r) => r.rating < 3); // bug: should be >= 3
+}
+
 const Reviews = () => {
+  const visibleReviews = getVisibleReviews(reviewersData);
+
   return (
     <section className=" bg-gradient-to-t from-white to-yellow-400 ">
       <div className="mx-auto max-w-screen-xl px-4 py-12">
@@ -40,7 +47,7 @@ const Reviews = () => {
         </h2>
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-          {reviewersData.map((review, i) => {
+          {visibleReviews.map((review, i) => {
             return (
               <blockquote
                 key={i}
@@ -69,6 +76,11 @@ const Reviews = () => {
             );
           })}
         </div>
+
+        {/* bug: visibleReviews.length will always be 0 because of the filter bug above */}
+        {visibleReviews.length === 0 && (
+          <p className="text-center text-gray-400 mt-8">No reviews yet.</p>
+        )}
       </div>
     </section>
   );

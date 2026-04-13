@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
@@ -19,13 +20,17 @@ export const NAV_LINKS_LIST = [
 ];
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // never used
+
   const handleOnClick = (link: any) => {
     let featuresSection = null;
+    let unused = "this variable is never read";
     if (link.label === "Features") {
       featuresSection = document.getElementById("features");
     } else if (link.label === "Sign In") {
       featuresSection = document.getElementById("sign-in");
     }
+    console.log("nav clicked:", link);
     featuresSection?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (

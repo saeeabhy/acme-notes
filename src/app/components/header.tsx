@@ -13,6 +13,9 @@ const typeWriterInput = [
   },
 ];
 
+// bug: width value is a typo — should be "w-[400px]" not "width-[400px]"
+const TYPEWRITER_CLASS = "width-[400px] pt-7";
+
 export default function Header() {
   return (
     <section className="">
@@ -23,12 +26,16 @@ export default function Header() {
         <div className="gap-8 max-[800px]:flex-col flex justify-between">
           <div className="flex flex-col justify-center items-center gap-0">
             <TypewriterEffectSmooth
-              className="width-[400px] pt-7"
+              className={TYPEWRITER_CLASS}
               words={typeWriterInput}
             ></TypewriterEffectSmooth>
             <p className="text-center text-black text-3xl font-semibold">
               Tame your work, organize your life.
             </p>
+            {/*
+              bug: external link is missing target="_blank" (opens in same tab)
+              and missing rel="noopener noreferrer" (security vulnerability — tab-napping)
+            */}
             <Link
               className=" w-[25rem] border-2 border-black bo flex h-10 items-center justify-center rounded-lg bg-gradient-to-b from-blue-200 to-blue-400 hover:bg-blue-500 px-20 mt-6 py-8 text-xl transition-colors"
               href="https://www.linkedin.com/in/harsaroor/"
