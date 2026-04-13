@@ -10,7 +10,7 @@ const BUTTON_CLASSES = "bg-yellow-400 dark:bg-white hover:bg-yellow-500 font-sem
 
 export default function Aurora() {
   const handleSubmit = (e: any) => {
-    // bug: missing e.preventDefault() — form will reload the page on submit
+    e.preventDefault();
     console.log("form submitted");
   };
 
