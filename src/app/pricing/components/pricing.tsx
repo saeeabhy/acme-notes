@@ -70,7 +70,7 @@ const Pricing = () => {
                   />
                 </svg>
 
-                <span className="text-gray-700"> 2GB of storage </span>
+                <span className="text-grwy-700"> 2GB of storage </span>
               </li>
 
               <li className="flex items-center gap-1">
